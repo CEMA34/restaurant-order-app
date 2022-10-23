@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive;
+    background: #F5F5F5;
+}
+
+img{
+    max-width: 100%;
+}
+
+nav {
+   text-align: center;
+    background-image: url("./images/nav-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+nav h1{
+    font-size: 39px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0.7em;
+}
+
+nav p{
+    font-size: 22px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItemsDiv{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 325px;
+}
+
+.menuItemsInnerDiv{
+    margin-right: auto;
+}
+
+.menuItemsDiv h3{
+    font-size: 28px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.ingredients-para{
+    color: #8B8B8B;
+}
+
+.price-para{
+    font-size: 20px;
+    color: #000000;
+}
+
+.emoji-para{
+    font-size: 78px;
+    line-height: 98px;
+}
+
+hr{
+    width: 500px;
+}
+
+.menuItemsDiv button{
+    border-radius: 50%;
+    cursor: pointer;
+    
+    float: right;
+    
+    font-size: 24px;
+    line-height: 24px;
+    color: #3C3C3C;
+    border: 1.5px solid #DEDEDE;
+}
+
+.order-title{
+   display: none;
+   text-align: center;
+   font-size: 28px;
+   line-height: 17px;
+   color: #000000;
+}
+
+.orderItemsDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.orderNameDiv{
+    display: flex;
+    align-items: center;
+}
+
+.menuName{
+    font-size: 28px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.removeOrderBtn{
+    color: #BBBBBB;
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'Jost', sans-serif;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.menuPrice{
+    font-size: 20px;
+    line-height: 24px;
+   color: #0e0e0e;
+}
+
+.finalOrderDiv{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.finalOrderInnerDiv{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.finalOrderDiv p{
+    font-size: 20px;
+    line-height: 24px;
+    color: #0e0e0e;
+}
+
+.completeOrderBtn{
+    margin: 0.5em auto;
+    text-align: center;
+    display: block;
+    width: 500px;
+    height: 40px;
+    background: #16DB99;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: #FFFFFF;
+    border-style: none;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 525px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 4px;   
+    font-family: 'Jost', sans-serif;
+}
+
+.modal-inner-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-inner-div h1{
+    
+    color: #000000;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-inner-div input{
+    width: 500px;
+    height: 40px;
+    color: #757575;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    padding: 1em;
+    font-size: 15px;
+    margin-top: 1em;
+}
+
+.modal-inner-div button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+    width: 500px;
+    height: 40px;
+    background: #16DB99;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: #FFFFFF;
+    border-style: none;
+    cursor: pointer;
+}
+
+.confirmation-text{
+   
+    display: none;
+    width: 500px;
+    height: 120px;
+    background: #ECFDF5;
+    border-radius: 3px;
+    margin: 1em auto;
+}
+
+.confirmation-text h1{
+    color: #065F46;
+    text-align: center;
+    padding-top: 1.4em;
+}
+
+@media(max-width:600px) {
+    hr{
+        width: 350px;
+    }
+
+    .completeOrderBtn{
+        width: 350px;
+    }
+
+    .modal{
+        width: 350px;
+    }
+
+    .modal-inner-div input{
+        width: 325px;
+    }
+
+    .modal-inner-div button{
+        width: 325px;
+    }
+
+    .confirmation-text{
+        width: 350px;
+    }
+}
